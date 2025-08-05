@@ -1,0 +1,81 @@
+.container {
+    
+    height: 100vh;
+    /* 100vh means 1005 of viewport height mtlb browser ka pura viewport height milega table ko*/
+    display:grid;
+    grid-template-rows:repeat(12,1fr);
+    grid-template-columns:repeat(12,1fr);
+    grid-gap:10px 10px;
+    
+}
+
+.container div {
+ background-color: pink;
+ /* give bg color to all the div elemnts in container and not the entire conatiner to see the grid gap visible*/
+ font-size:1.5rem;
+ /*setting the font size in rem units */
+}
+
+#header {
+     grid-column: 1 / span 12;
+
+}
+#sidebar {
+    grid-row:2 / span 10;
+    grid-column:1 / span 3;
+        
+}
+#navigation {
+    grid-column:4 / span 6;
+
+    
+}
+#main {
+    grid-row:3 / span 9;
+    grid-column:4 / span 6;
+     
+}
+#ads {
+    grid-row:2 / span 10;
+    grid-column:10 / span 3;
+      
+}
+#footer {
+    grid-column:1 / span 12;
+     
+}
+
+@media (max-width:720px){
+    /*in media queries only include the changes u wanna made here dont need to add the container details again like width,bg color n all*/
+     .container div {
+ font-size:0.5rem;
+ /*setting the font size in rem units 0.5 as we want it to be 0.5times smaller when the screen size becomes less than 720px to fit in text */
+}
+#header {
+    /*NOTE-ALWAYS ADD SPACE IN BETWEEN NUMBER & SPAN, AND IN BETWEEN / & NUMBER IN GRID-ROW LIKE BELOW OTHERWISE PROPERTIES DONT APPLY PROPERLY*/
+    grid-column: 1 / span 12;
+    grid-row: 1 / span 1;
+}
+#navigation {
+    grid-column: 1 / span 12;
+    grid-row: 2 / span 1;
+}
+#sidebar {
+    grid-row: 3 / span 9;
+    grid-column: 1 / span 3;
+
+}
+#main {
+    grid-row: 3 / span 9;
+    grid-column: 4 / span 9;
+}
+#ads {
+    grid-column: 1 / span 3;
+    grid-row: 12 / span 1;
+}
+#footer {
+    grid-column: 4 / span 9;
+    grid-row: 12 / span 1;
+}
+
+}

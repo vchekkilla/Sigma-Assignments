@@ -1,0 +1,108 @@
+* {
+    padding:0px;
+    margin:0px;
+     color: white;
+    text-decoration: none;
+
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+.main_box {
+    height: 100vh;
+    background: url("mini.jpg");
+    background-size: cover;
+    
+    
+}
+.btn_one label i {
+    position: absolute;
+    left:10px;
+    top:20px;
+    font-size: larger;
+    font-weight: 800;
+
+
+}
+.sidebar_menu .logo a {
+  
+  padding:30px;
+  font-size:x-large;
+  font-weight: 400;
+  text-align: center;
+  
+
+  
+}
+.sidebar_menu {
+    /*pushes the entire sidebar on left part of screen negative side pe*/
+    position: fixed;
+  
+  
+    height: 100vh;
+    width: 300px;
+    left:-350px;
+}
+
+
+.btn_two label i {
+    position: absolute;
+    left:220px;
+    top:12px;
+    font-size: larger;
+    font-family: 800;
+    opacity:0;
+
+
+
+}
+#check {
+    opacity:0;
+}
+.menu li  {
+    font-size: larger;
+    margin-bottom:20px;
+    padding:7px;
+}
+.menu li i{
+    margin-right: 5px;
+    margin-top:20px;
+
+}
+.social_media  {
+   
+  position: absolute;
+  bottom: 20px;
+  }
+.social_media a i {
+    
+ padding:10px;
+ margin:10px;
+ 
+}
+ .main_box #check:checked  ~ .sidebar_menu {
+left:0px;
+
+}
+#check:checked ~ .sidebar_menu .btn_two label i {
+  opacity: 1;
+   cursor:pointer;
+}
+
+.logo a:hover,
+.menu li:hover,
+.social_media a:hover {
+ box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+ transition: all 0.3s ease;
+ font-size: larger;
+}
+.btn_one:hover , .btn_two:hover {
+     font-size: larger;
+    font-weight: 500;
+}
+#check:checked ~ .btn_one i {
+    opacity: 0;
+}
+

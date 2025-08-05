@@ -1,0 +1,25 @@
+.outer {
+margin:50px auto;
+height: 100px;
+width:100px;
+border-radius:50%;
+border: 30px solid #f3f3f3;
+/*WE MAKE A BORDER USING THIS N KEEP IT BORDER-RADIUS 50% TO MAKE IT LOOK CIRCLE BORDER RATHER THAN SQUARE AND THEN WE ADD ALMOST
+ LIGHTGREY COLOR TO IT*/
+border-top:30px solid  goldenrod;
+/*WE MAKE A BORDER TOP CHOTA SA PART AT BORDER IN GOLDENROD COLOR WHICH WILL ROTATE THE ENTIRE BORDER WE MADE ABOVE USING ANIMATION*/
+
+animation: loaderAnimation 3s linear infinite ;
+
+}
+
+
+@keyframes loaderAnimation{
+    0%{
+     transform: rotate(0deg)
+    }
+    
+    100%{
+    transform: rotate(360deg);
+    }
+ }

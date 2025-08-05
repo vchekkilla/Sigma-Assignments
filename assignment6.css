@@ -1,0 +1,24 @@
+#box {
+  height:150px;
+  width:300px;
+  background-color: grey;
+  border:5px dotted black;
+  margin:20px 1em 40px 2em;
+  padding:1em;
+  text-align:center;
+
+}
+
+.circle {
+    height: 100px;
+    width:100px;
+    background-color: pink;
+    border:2px solid black;
+    border-radius:50%;
+    display:inline-block;
+    text-align:center;   
+}
+
+li {
+    display:inline-block;
+}

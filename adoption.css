@@ -1,0 +1,44 @@
+h1 {
+    text-align: center;
+    color: goldenrod;
+}
+.parentcontainer {
+    /*since parent container is this holding both the cards add flex property to it to set both cards in between of the website*/
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+ 
+img {
+    width:100%;
+    /*sets the img 100% of the container of the card*/
+    border-radius: 10px 10px 0px 0px;
+    
+}
+
+/* make a separate div for cards and name it same class and adjust its width,border n all together*/
+.cards {
+
+    width:700px;
+    /*width imp for cards so u can set its image width relative to cards width*/
+     border-radius: 10px;
+    border: 3px solid black;
+    margin:30px auto;
+    
+    
+}
+.cards:hover {
+    box-shadow: 5px 10px 10px black;
+}
+
+.desc {
+    padding:2px;
+    text-align:center;
+}
+@media (max-width:720px){
+    /*using media queries to bring responsiveness and make our card appear in differnt lines using wrap property of flex*/
+    .parentcontainer {
+      flex-wrap:wrap;
+    }
+}
